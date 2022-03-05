@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,197,233,1) 100%);
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #bf94e9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    width: auto;
+    height: auto;
+    box-shadow: 20px 20px 50px rgba(27, 26, 27, 0.6);
+    border-radius: 15px;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #fdb02d;
+    position: relative;
+    width: auto;
+    height: auto;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: right;
+    display: block;
+    color: #69537e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #4c726e;
+    color: #fdbb2d;
+    border: 2px solid #fdbb2d;
+    border-radius: 12px;
+}
+
+.kotak {
+    width: 100%;
+    padding: 10px;
+    border: 5px solid gray;
+    border-style: dashed;
+    border-color: #d64c86;
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fdbb2d;
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+}
+
+li a {
+    display: block;
+    color:#69537e ;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #bf94e9;
+    color: #fdbb2d;
+    position: relative;
+    width: auto;
+    height: auto;
+    box-shadow: 20px 20px 50px rgba(27, 26, 27, 0.6);
+    border-radius: 15px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+    float: left;
+    width: 25%;
+padding-right: 10px;
+}
+
+/*middlecolumn*/
+.middlecolumn { 
+    float: left;
+    width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color:none;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: rgba(254,254,254, 0.3);
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    width: auto;
+    height: auto;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style Form Input*/
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input.button {
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #bf94e9;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 20px 20px 50px rgba(27, 26, 27, 0.6);
+    color:#69537e ;
+}
+
+/* Footer */
+.footer {
+    border-bottom-left-radius: 37px;
+    border-bottom-right-radius: 37px;
+    padding: 20px;
+    text-align: center;
+    background: #bf94e9;
+    margin-top: 20px;
+    position: relative;
+    width: auto;
+    height: auto;
+    box-shadow: 20px 20px 50px rgba(27, 26, 27, 0.6);
+    border-radius: 15px;
+    
+}
+
+.button {
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fdbb2d;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 20px 20px 50px rgba(27, 26, 27, 0.6);
+    color:#ff8800 ;
+}
+
+/*image gallery*/
+div.gallery {
+    margin: 12px;
+    float: left;
+    width: 2px;
+    border-style: outset;
+    position: relative;
+    width: auto;
+    height: auto;
+    box-shadow: 20px 20px 50px rgba(27, 26, 27, 0.6);
+    border-radius: 15px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next 
+to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn, .kotak { 
+    width: 100%;
+    padding: 0;
+    }
+}
+/* Responsive layout - when the screen is less than 400px wide, 
+make the navigation links stack on top of each other instead of 
+next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+    float: none;
+    width: 100%;
+    }
+}
